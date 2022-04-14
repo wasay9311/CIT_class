@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+<input type="text"  id="txt1">
+<input type="text" id="txt2">
+<input type="text" id="sum">
+<button onclick="Calculate()">Calculate</button>
+<hr>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+	function Calculate() {
+		var a,b,c;
+
+		a=Number (document.getElementById("txt1").value);
+		b=Number (document.getElementById("txt2").value);
+		c=a+b;
+		document.getElementById("sum").value=c;
+	}
+</script>

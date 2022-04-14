@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<style>{
+
+	}
+
+	</style>
+
+</head>
+<body>
+<button id="btn_Red">Red</button><br>
+<button id="btn_Green">Green</button><br>
+<button id="btn_Blue">Blue</button><br>
+<br>
+<br>
+<div id="bg1">
+	<p id="text_color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<hr><hr>
+<h1>Task</h1>
+<div class="container">
+<input class="formcontrol" type="text" id="d1"><br>
+<input class="formcontrol" type="text" id="d2"><br>
+<input class="formcontrol" type="text" id="d3"><br>
+<button id="square" onclick="sum()">x2</button><br>
+
+<br><br>
+<h1>Password</h1>
+<input class="formcontrol" type="password" id="show"><br>
+<button id="pass" onclick="showpass()">Show Password</button>
+<br>
+<br>
+<H1>multiply</H1>
+<input class="formcontrol" type="text" id="num4"><br>
+<button id="multiply" onclick="multiply()">2x</button><br><br><br><br>
+
+
+</div>
+</body>
+</html>
+<script>
+// Red btn
+	document.getElementById("btn_Red").onclick=function () {
+		document.getElementById("text_color").style.color='Red';
+	}
+// Green btn
+	document.getElementById("btn_Green").onclick=function () {
+		document.getElementById("text_color").style.color='Green';
+	}
+// blue btn
+	document.getElementById("btn_Blue").onclick=function () {;
+	document.getElementById("text_color").style.color='blue';
+
+	}
+	// backround change
+		document.getElementById("btn_Blue").onclick=function () {;
+		document.getElementById("bg1").style.background='Blue';
+		document.getElementById("text_color").style.color='white';
+	}
+
+		 document.getElementById(h2).style.color="Red";
+		 function sum(){
+		 	var nm1=parseInt(document.getElementById("d1").value);
+		 	var nm2=parseInt(document.getElementById("d2").value);
+		 	var add=(nm1*nm2);
+		 	document.getElementById("d3").value=add;
+
+		 }
+		 
+		 function showpass(){
+		 	document.getElementById("show").type='text';
+		 }
+
+		 function multiply(){
+		 	var num4=document.getElementById("num4").value;
+		 	var num1=num4*2;
+		 	document.getElementById("num4").value=num1;
+		 }
+		 
+</script>

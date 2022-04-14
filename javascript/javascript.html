@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+<div id="div1">This is Abdul</div>
+<button id="btn1" onclick="Clicked();">Click Me</button>
+<hr>
+
+<input type="text" class="formcontrol" id="txt1"><br>
+<input type="text" class="formcontrol" id="txt2">
+<button onclick="Calculate();">Calculate</button>
+<div id="div2"></div>
+</body>
+</html>
+
+<script type="text/javascript">
+	function Calculate() {
+		var val1=document.getElementById("txt1").value;
+		var val2=document.getElementById("txt2").value;
+	    var answer=val1+val2;
+	 	document.getElementById("div2").innerHTML = answer;
+	}
+
+	function Clicked(){
+		var divone=document.getElementById("div1");
+		divone.innerHTML="This is Wasay";
+		document.getElementById("btn1").innerHTML="Clicked";
+	}
+</script>

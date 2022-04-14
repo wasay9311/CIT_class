@@ -1,0 +1,36 @@
+<!DCTYPE html>
+<html>
+<body style="background-color:lightblue;">
+<head>
+	<title>Zakat</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+<h1>ZAKAT</h1>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4">
+			<label for="">Quantity</label><br>
+			<input class="form-control" type="text" id="z-Q" onchange="discount();"><br>
+
+			<label for="">Zakat Ratio</label><br>
+			<input class="form-control" type="text" id="Qnt"><br>
+
+			<label for="">Total Ratio</label><br>
+			<input class="form-control" type="text" id="T-Z"><br>
+
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+<script >
+function discount() {
+	var n1=Number(document.getElementById('z-Q').value);
+	var zk=n1*2.5/100;
+	document.getElementById('Qnt').value=zk;
+	var t_zk=n1-zk;
+	document.getElementById('T-Z').value=t_zk;
+}
+</script>

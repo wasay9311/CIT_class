@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:lightblue;">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+<h1>Task</h1><br>
+<div class="container">
+<input type="text" id="marks"><br>
+<input type="text" id="per"><br>
+
+<button class="btn btn-success" id="show-per">Calculate</button><br>
+</div>
+</body>
+</html>
+<script >
+	 document.getElementById("show-per").onclick=function(){
+		 	var your_marks=document.getElementById("marks").value;
+		 	var total2=(your_marks/1100)*100;
+		 	document.getElementById("per").value=total2;
+		 }
+</script>
